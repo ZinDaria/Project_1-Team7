@@ -5,11 +5,15 @@ Analyzing credit card transactions occurring over a 2-day period in the accounts
 Identifying patterns in fraud versus non-fraud transactions.
 Establishing relationships between various data points such as age, gender, transaction type (POS, Online, ATM), transaction time, country of transaction, shipping address, etc.
 ### Assumptions
-All transactions are from customers' accounts domiciled in the United Kingdom, with time zone set to British Summer Time (BST) and amounts stated in Great British Pounds (£).
-Individuals aged 30 to 50 are assumed to be more attractive targets for fraudsters due to their greater financial resources.
+1. All the transactions are from customers' accounts domiciled in the United Kingdom. Therefore, the time zone is British Summer Time (BST) and amounts are stated in Great British Pounds (£).
+2. Individuals between the ages 30 and 50 are more attractive targets of fraudsters due to their greater financial resources.
+
+
 ### Limitations
-The data provided, and thus our analysis, is based on 2 specific days of the week (Tuesday and Wednesday).
-The data is from 2020 and may not be the most recent available.
+1. The data provided, and thus our analysis is based on 2 days of the week (Tuesday and Wednesday).
+2. The data is from 2020, and may not be the most recent available.
+
+
 ### Analysis
 *Step-by-step processes are detailed within the Jupyter notebook.
 
@@ -20,7 +24,14 @@ Which country is the source of most fraud?
 During which time of the day do most fraudulent transactions occur?
 After pre-processing the data, a total of 99,977 credit card transactions remained for further analysis. Out of these, 7,192 were fraud transactions, accounting for 7.19% of the total transactions.
 
-The total amount lost to fraud was £459,495 out of a total transaction amount of £11,255,404, making up 4.08% of the total amount. Individual fraud amounts ranged from £5 to £400.
+1. What age group and  gender is most affected by fraud?
+2. Which country is the source of most fraud?
+3. Which time of the day do most fraudulent transactions occur?
+
+
+After pre-processing the data, a total of 99,977 credit card transactions remained for further analysis. 7,192 of these were fraud transactions which account for 7.19% of the total transactions.
+
+Total amount lost to fraud was £459,495 out of a total transaction amount of £11,255,404, accounting for 4.08% of the total amount. The individual fraud amounts range from £5 to £400.
 
 Our analysis revealed the following:
 
@@ -42,34 +53,31 @@ These findings lay the groundwork for improving fraud detection and implementing
 Data for this dataset was obtained from  https://www.kaggle.com/datasets/anurag629/credit-card-fraud-transaction-data/data and is intended for learning and exploratory purposes only.
 
 Other sources and their use in this notebook:
-Working with secondary axis:
- - https://saturncloud.io/blog/how-to-format-secondary-yaxis-in-pandas/#:~:text=In%20Pandas%2C%20we%20can%20create,format%20and%20customize%20as%20needed
- - https://samchaaa.medium.com/how-to-plot-two-different-scales-on-one-plot-in-matplotlib-with-legend-46554ba5915a
-Merging legends for several x-axis charts:
- - https://stackoverflow.com/questions/5484922/secondary-axis-with-twinx-how-to-add-to-legend
- - https://stackoverflow.com/questions/5484922/secondary-axis-with-twinx-how-to-add-to-legend
-Setting label per each line: https://stackoverflow.com/questions/64111555/get-lines-and-labels-from-matplotlib-axes
-Switching column to a row: https://www.w3resource.com/pandas/dataframe/dataframe-pivot.php
-Create the stacked bar chart: https://www.geeksforgeeks.org/create-a-stacked-bar-plot-in-matplotlib/
-Working with a string:
- - https://www.softwaretestinghelp.com/python/python-string-split/
- - https://buzzcoder.gitbooks.io/codecraft-python/content/string/loop-through-a-string.html
-Mode calculation: https://stackoverflow.com/questions/50208007/calculate-mode-of-a-column-in-pandas-using-other-column-with-same-row-values
-Merging by index: https://stackoverflow.com/questions/40468069/merge-two-dataframes-by-index      
-Sharing of the same colour for item per different charts: https://github.com/geopandas/geopandas/issues/1269
-Adjust spacing between subplots: https://www.geeksforgeeks.org/how-to-set-the-spacing-between-subplots-in-matplotlib-in-python/
-How to build Venn diagram:
-- https://www.geeksforgeeks.org/how-to-create-and-customize-venn-diagrams-in-python/
-- https://stackoverflow.com/questions/19841535/python-matplotlib-venn-diagram
-Grouped bar charts: https://www.pythoncharts.com/matplotlib/grouped-bar-charts-matplotlib/
-The text annotation for each bar with numbers: https://www.pythoncharts.com/matplotlib/grouped-bar-charts-matplotlib/
-Colors set: #https://matplotlib.org/stable/gallery/color/named_colors.html (edited)
+1. [Working with secondary axis](https://saturncloud.io/blog/how-to-format-secondary-yaxis-in-pandas/#:~:text=In%20Pandas%2C%20we%20can%20create,format%20and%20customize%20as%20needed) 
+ (https://samchaaa.medium.com/how-to-plot-two-different-scales-on-one-plot-in-matplotlib-with-legend-46554ba5915a)
+2. [Merging legends for several x-axis charts](https://stackoverflow.com/questions/5484922/secondary-axis-with-twinx-how-to-add-to-legend)
+3. [Setting label per each line](https://stackoverflow.com/questions/64111555/get-lines-and-labels-from-matplotlib-axes)
+4. [Switching column to a row](https://www.w3resource.com/pandas/dataframe/dataframe-pivot.php)
+5. [Create the stacked bar chart](https://www.geeksforgeeks.org/create-a-stacked-bar-plot-in-matplotlib/)
+6. [Working with a string](https://www.softwaretestinghelp.com/python/python-string-split/)
+ (https://buzzcoder.gitbooks.io/codecraft-python/content/string/loop-through-a-string.html)
+[Mode calculation](https://stackoverflow.com/questions/50208007/calculate-mode-of-a-column-in-pandas-using-other-column-with-same-row-values)
+7. [Merging by index](https://stackoverflow.com/questions/40468069/merge-two-dataframes-by-index)     
+8. [Sharing of the same colour for item per different charts](https://github.com/geopandas/geopandas/issues/1269)
+9. [Adjust spacing between subplots](https://www.geeksforgeeks.org/how-to-set-the-spacing-between-subplots-in-matplotlib-in-python/)
+10. [How to build Venn diagram](https://www.geeksforgeeks.org/how-to-create-and-customize-venn-diagrams-in-python/) (https://stackoverflow.com/questions/19841535/python-matplotlib-venn-diagram)
+11. [Grouped bar charts](https://www.pythoncharts.com/matplotlib/grouped-bar-charts-matplotlib/)
+12. [The text annotation for each bar with numbers](https://www.pythoncharts.com/matplotlib/grouped-bar-charts-matplotlib/)
+13. [Colors set](#https://matplotlib.org/stable/gallery/color/named_colors.html) 
 
-### Acknowledgments
-Shout out to fellow contributors to this project:
 
-Daria Z.
-Neha S.
-Seeke O.D
-Valentyna K.
+### Acknowledgements
+
+Shout out to the contributors to this project:
+1. Daria Z.
+2. Neha S.
+3. Seeke O.D
+4. Valentyna K.
+
+
 It has been great working and learning with you all.
