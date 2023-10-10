@@ -38,24 +38,33 @@ The percentage of the amount of fraud transactions compared to total transaction
 These findings lay the groundwork for improving fraud detection and implementing targeted preventive measures.
 
 ### References
-Data for this dataset was obtained from Kaggle and is intended for learning and exploratory purposes only.
+
+Data for this dataset was obtained from  https://www.kaggle.com/datasets/anurag629/credit-card-fraud-transaction-data/data and is intended for learning and exploratory purposes only.
 
 Other sources and their use in this notebook:
+Working with secondary axis:
+ - https://saturncloud.io/blog/how-to-format-secondary-yaxis-in-pandas/#:~:text=In%20Pandas%2C%20we%20can%20create,format%20and%20customize%20as%20needed
+ - https://samchaaa.medium.com/how-to-plot-two-different-scales-on-one-plot-in-matplotlib-with-legend-46554ba5915a
+Merging legends for several x-axis charts:
+ - https://stackoverflow.com/questions/5484922/secondary-axis-with-twinx-how-to-add-to-legend
+ - https://stackoverflow.com/questions/5484922/secondary-axis-with-twinx-how-to-add-to-legend
+Setting label per each line: https://stackoverflow.com/questions/64111555/get-lines-and-labels-from-matplotlib-axes
+Switching column to a row: https://www.w3resource.com/pandas/dataframe/dataframe-pivot.php
+Create the stacked bar chart: https://www.geeksforgeeks.org/create-a-stacked-bar-plot-in-matplotlib/
+Working with a string:
+ - https://www.softwaretestinghelp.com/python/python-string-split/
+ - https://buzzcoder.gitbooks.io/codecraft-python/content/string/loop-through-a-string.html
+Mode calculation: https://stackoverflow.com/questions/50208007/calculate-mode-of-a-column-in-pandas-using-other-column-with-same-row-values
+Merging by index: https://stackoverflow.com/questions/40468069/merge-two-dataframes-by-index      
+Sharing of the same colour for item per different charts: https://github.com/geopandas/geopandas/issues/1269
+Adjust spacing between subplots: https://www.geeksforgeeks.org/how-to-set-the-spacing-between-subplots-in-matplotlib-in-python/
+How to build Venn diagram:
+- https://www.geeksforgeeks.org/how-to-create-and-customize-venn-diagrams-in-python/
+- https://stackoverflow.com/questions/19841535/python-matplotlib-venn-diagram
+Grouped bar charts: https://www.pythoncharts.com/matplotlib/grouped-bar-charts-matplotlib/
+The text annotation for each bar with numbers: https://www.pythoncharts.com/matplotlib/grouped-bar-charts-matplotlib/
+Colors set: #https://matplotlib.org/stable/gallery/color/named_colors.html (edited)
 
-Working with secondary axis: Saturn Cloud, Medium
-Merging legends for several x-axis charts: Stack Overflow
-Setting label per each line: Stack Overflow
-Switching column to a row: W3Resource
-Create the stacked bar chart: GeeksforGeeks
-Working with a string: Software Testing Help, Buzz Coder
-Mode calculation: Stack Overflow
-Merging by index: Stack Overflow
-Sharing of the same color for item per different charts: GitHub
-Adjusting spacing between subplots: GeeksforGeeks
-How to build Venn diagram: GeeksforGeeks, Stack Overflow
-Grouped bar charts: Python Charts
-Text annotation for each bar with numbers: Python Charts
-Colors set: Matplotlib
 ### Acknowledgments
 Shout out to fellow contributors to this project:
 
