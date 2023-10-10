@@ -68,7 +68,7 @@ Other sources and their use in this notebook:
 10. [How to build Venn diagram](https://www.geeksforgeeks.org/how-to-create-and-customize-venn-diagrams-in-python/) (https://stackoverflow.com/questions/19841535/python-matplotlib-venn-diagram)
 11. [Grouped bar charts](https://www.pythoncharts.com/matplotlib/grouped-bar-charts-matplotlib/)
 12. [The text annotation for each bar with numbers](https://www.pythoncharts.com/matplotlib/grouped-bar-charts-matplotlib/)
-13. [Colors set](#https://matplotlib.org/stable/gallery/color/named_colors.html) 
+13. [Colors set](https://matplotlib.org/stable/gallery/color/named_colors.html)
 
 
 ### Acknowledgements
